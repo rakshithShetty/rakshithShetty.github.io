@@ -20,35 +20,30 @@ class HomeIndex extends React.Component {
 							<h2>{mainPage.introHeading}</h2>
 						</header>
 						<p>{mainPage.introtext}</p>
-						<ul className="actions">
-							<li>
-								<a
-									href={resume}
-									rel="noreferrer noopener"
-									target="_blank"
-									className="button">
-									Curriculum Vitae
-								</a>
-							</li>
-						</ul>
 					</section>
 
 					<section id="two">
-						<h2>Work</h2>
-						{projectData.map(({ title, shortDesc, mainThumb, link }, index) => (
+						<h2>News</h2>
+                        <ul>
+                        <li> Great stuff</li>
+                        <li> Better stuff</li>
+                        </ul>
+					</section>
+
+					<section id="three">
+						<h2>Publications</h2>
+						{projectData.map(({ title, shortDesc, where, mainThumb, links }, index) => (
 							<ProjectCard
 								key={index}
 								title={title}
 								desc={shortDesc}
+                                where={where}
 								img={mainThumb}
-								link={link}
+								links={links}
 							/>
 						))}
 					</section>
 
-					<section id="three">
-						<ContactForm />
-					</section>
 				</div>
 			</Layout>
 		);

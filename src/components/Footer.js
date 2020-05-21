@@ -1,5 +1,6 @@
 import React from 'react';
 import { links } from '../assets/data/data';
+import resume from '../assets/resume.pdf';
 
 class Footer extends React.Component {
 	render() {
@@ -7,6 +8,15 @@ class Footer extends React.Component {
 			<div id="footer">
 				<div className="inner">
 					<ul className="icons">
+						<li>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href={resume}
+								className="icon fa-address-card">
+								<span className="label">Curiculam</span>
+							</a>
+						</li>
 						<li>
 							<a
 								target="_blank"

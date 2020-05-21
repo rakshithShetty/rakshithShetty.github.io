@@ -46,8 +46,8 @@
 	)
 );
 
-$size-header-width: 25%;
-$size-header-pad: 4em;
+$size-header-width: 20%;
+$size-header-pad: 2em;
 
 /* Basic */
 
@@ -83,7 +83,7 @@ a {
 			'border-color #{_duration(transition)} ease-in-out'
 		)
 	);
-	border-bottom: dotted 1px;
+	//border-bottom: dotted 1px;
 	color: _palette(accent1, bg);
 	text-decoration: none;
 
@@ -981,7 +981,7 @@ input[type='button'],
 
 	.image.avatar {
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
-		width: 6.25em;
+		width: 8.25em;
 	}
 }
 
@@ -1028,12 +1028,12 @@ input[type='button'],
 #main {
 	margin-left: $size-header-width;
 	margin-bottom: 10px;
-	max-width: 50em + $size-header-pad;
-	padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-	width: calc(100% - #{$size-header-width});
+	//max-width: 50em + $size-header-pad;
+	padding: ($size-header-pad * 1.5) $size-header-pad*3 $size-header-pad $size-header-pad;
+	width: calc(100% - #{$size-header-width} - 10%);
 
 	> section {
-		border-top: solid 2px _palette(border);
+		border-top: solid 1px _palette(border);
 		margin: $size-header-pad 0 0 0;
 		padding: $size-header-pad 0 0 0;
 
@@ -1237,7 +1237,7 @@ body.is-touch {
 /* Large */
 
 @include breakpoint(large) {
-	$size-header-width: 30%;
+	$size-header-width: 25%;
 	$size-header-pad: 3em;
 
 	/* Header */
@@ -1553,46 +1553,63 @@ body.is-touch {
 }
 
 .project-link {
-	background: #171891;
-	padding: 8px 24px;
-	margin-right: 8px;
-	color: white;
+	background: #9ccab585;
+	padding: 4px 12px;
+	margin-right: 12px;
+	margin-top: 8px;
+	color: black;
 	border-radius: 4px;
+	display: inline-block;
+}
+
+.details-panel {
+    margin-top: 16px;
+    font-family: Consolas, Menlo, Courier, monospace; 
+    white-space: pre-line;
+    font-size: 0.9rem; 
+    font-size: 0.8em;
+    color: #567482; 
+    background-color: #f3f6fa; 
+    border-radius: 0.3rem;
 }
 
 .card {
-	margin: 10px;
-	width: calc(50% - 20px);
-	display: inline-flex;
+	margin: 16px;
+	width: 100%;
+	display: flex;
 	border-radius: 4px;
+    padding: 8px;
 
 	.card-image {
-		width: 100%;
+		width: 28%;
+		height: 80%;
+        //border: 4px solid #f1f1f1
 	}
 
 	a {
-		color: white;
+		color: #1d0707;
 	}
 
 	.card-text {
-		padding: 8px;
+		width: 70%;
+		padding: 0px 16px 8px 16px;
 		h4 {
 			margin: 0;
 		}
 
 		p {
-			margin: 0;
+			margin-bottom: 1px;
 			color: _palette(fg);
-			font-size: 0.8em;
+			font-size: 1.0em;
 		}
 	}
 }
 
-.card:hover {
-	-webkit-box-shadow: 0px 0px 9px 2px rgba(156, 154, 156, 1);
-	-moz-box-shadow: 0px 0px 9px 2px rgba(156, 154, 156, 1);
-	box-shadow: 0px 0px 9px 2px rgba(156, 154, 156, 1);
-}
+//.card:hover {
+//	-webkit-box-shadow: 0px 0px 9px 2px rgba(156, 154, 156, 1);
+//	-moz-box-shadow: 0px 0px 9px 2px rgba(156, 154, 156, 1);
+//	box-shadow: 0px 0px 9px 2px rgba(156, 154, 156, 1);
+//}
 
 @media screen and (max-width: 480px) {
 	.\36 u,
