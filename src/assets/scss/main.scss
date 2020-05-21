@@ -275,7 +275,7 @@ form {
 label {
 	color: _palette(fg-bold);
 	display: block;
-	font-size: 0.9em;
+	font-size: 1.9em;
 	font-weight: _font(weight-bold);
 	margin: 0 0 (_size(element-margin) * 0.5) 0;
 }
@@ -462,9 +462,9 @@ input[type='radio'] {
 	border-bottom: none;
 	position: relative;
 
-	> .label {
-		display: none;
-	}
+	//> .label {
+	//	display: none;
+	//}
 }
 
 /* Image */
@@ -711,7 +711,7 @@ ul {
 		padding: 0;
 
 		li {
-			line-height: 1.75em;
+			line-height: 1.00em;
 			margin: 1.5em 0 0 0;
 			padding-left: 2.25em;
 			position: relative;
@@ -1303,7 +1303,7 @@ body.is-touch {
 		&.icons {
 			li {
 				.icon {
-					font-size: 1.25em;
+					font-size: 3.25em;
 				}
 			}
 		}
@@ -1409,10 +1409,10 @@ body.is-touch {
 	ul {
 		&.labeled-icons {
 			li {
-				padding-left: 2em;
+				padding-left: 1em;
 
 				h3 {
-					line-height: 1.75em;
+					line-height: 1.00em;
 				}
 			}
 		}
@@ -1561,6 +1561,12 @@ body.is-touch {
 	border-radius: 4px;
 	display: inline-block;
 }
+
+.cv-icon {
+	background-image: url("https://img.icons8.com/fluent/96/000000/resume.png");
+	display: inline-block;
+}
+
 
 .details-panel {
     margin-top: 16px;

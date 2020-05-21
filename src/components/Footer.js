@@ -7,14 +7,14 @@ class Footer extends React.Component {
 		return (
 			<div id="footer">
 				<div className="inner">
-					<ul className="icons">
+					<ul className="labeled-icons">
 						<li>
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
 								href={resume}
 								className="icon fa-address-card">
-								<span className="label">Curiculam</span>
+								<span className="label"> Curriculum Vitae</span>
 							</a>
 						</li>
 						<li>
@@ -23,7 +23,7 @@ class Footer extends React.Component {
 								rel="noopener noreferrer"
 								href={links.scholar}
 								className="icon fa-graduation-cap">
-								<span className="label">Google Scholar</span>
+								<span className="label"> Google Scholar</span>
 							</a>
 						</li>
 						<li>
@@ -32,7 +32,7 @@ class Footer extends React.Component {
 								rel="noopener noreferrer"
 								href={links.github}
 								className="icon fa-github">
-								<span className="label">Github</span>
+								<span className="label"> Github</span>
 							</a>
 						</li>
 						<li>
@@ -41,7 +41,7 @@ class Footer extends React.Component {
 								rel="noopener noreferrer"
 								href={links.linkedin}
 								className="icon fa-linkedin">
-								<span className="label">LinkedIn</span>
+								<span className="label"> LinkedIn</span>
 							</a>
 						</li>
 						<li>
@@ -50,7 +50,7 @@ class Footer extends React.Component {
 								rel="noopener noreferrer"
 								href={links.mail}
 								className="icon fa-envelope-o">
-								<span className="label">Email</span>
+								<span className="label"> Contact</span>
 							</a>
 						</li>
 					</ul>

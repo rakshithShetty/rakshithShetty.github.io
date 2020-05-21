@@ -32,7 +32,7 @@ export const mainPage = {
 	siteTitle: 'Rakshith Shetty - Portfolio',
 	siteDescription: 'Rakshith Shetty - Portfolio',
 	introHeading: "Hi, I'm Rakshith",
-	introtext: ['I am 4th year PhD student at the ',
+	introtext: ['I am a 4th year PhD student at the ',
         <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/"> Computer Vision and Machine Learning</a>,
         ' group under the supervision of ',
         <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/bernt-schiele/"> Prof. Dr. Bernt Schiele </a>,
