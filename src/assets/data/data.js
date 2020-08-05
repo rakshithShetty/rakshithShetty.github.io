@@ -4,6 +4,8 @@ import remimg from '../images/projects/objremoval/teaser.gif';
 import antimg from '../images/projects/a4nt/teaser.png';
 import spkimg from '../images/projects/speaklikhum/teaser.gif';
 import payatt from '../images/projects/payatt/teaser.gif';
+import semadv from '../images/projects/semadv/teaser.gif';
+import paper3570 from '../3570.pdf';
 import React from 'react'
 
 export const links = {
@@ -13,7 +15,7 @@ export const links = {
 	mail: 'mailto:rakshith.rs@gmail.com',
 };
 
-export const introText = 'a PhD Student in Computer Vision!';
+export const introText = 'a PhD Student in Computer Vision and Machine Learning!';
 
 export const contactForm = {
 	intro:
@@ -43,6 +45,34 @@ export const mainPage = {
 };
 
 export const projectData = [
+	{
+		title: 'Towards automated testing and robustification by semantic adversarial data generation',
+		shortDesc: [<strong> Rakshith Shetty, </strong>,
+                    'Mario Fritz, ',
+                    'Bernt Schiele'
+        ],
+		where:'ECCV, 2020 (oral)',
+		links: [
+			{
+				title: 'Paper',
+				link: paper3570,
+			},
+			{
+				title: 'Bibtex',
+				isExpandable: true,
+                link: 'abc',
+				content: `@inproceedings{shetty2020SemAdv,\n\
+                          title={Towards automated testing and robustification by semantic adversarial data generation},\n \
+                          author={Shetty, Rakshith and Fritz, Mario and Schiele, Bernt}, \n\
+                          booktitle={European Conference on Computer Vision (ECCV)}, \n\
+                          year={2020}, \n\
+                          }`
+			},
+		],
+		mainThumb: semadv,
+		gallery: [
+		],
+	},
 	{
 		title: 'Towards Causal VQA: Revealing and Reducing Spurious Correlations by Invariant and Covariant Semantic Editing',
 		shortDesc: ['Vedika Agarwal, ',
