@@ -51,7 +51,7 @@ export const projectData = [
                     'Mario Fritz, ',
                     'Bernt Schiele'
         ],
-		where:'ECCV, 2020 (oral)',
+		where:['ECCV, 2020, ', <b> <span style={{color: 'red'}}> Oral </span></b>],
 		links: [
 			{
 				title: 'Paper',
@@ -181,8 +181,7 @@ export const projectData = [
 		shortDesc: [<strong> Rakshith Shetty</strong>,
                     ', Bernt Schiele, ',
                     'Mario Fritz'],
-		where:
-			'USENIX, 2018 (Oral)',
+		where:['USENIX, 2018, ', <b> <span style={{color: 'red'}}> Oral </span></b>],
 		links: [
 			{
 				title: 'Paper',

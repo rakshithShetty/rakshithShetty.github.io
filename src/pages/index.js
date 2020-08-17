@@ -24,7 +24,7 @@ class HomeIndex extends React.Component {
 					<section id="two">
 						<h2>News and Events</h2>
                         <ul>
-                        <li> <b>Jul '20:</b> New paper on semantic adversarial attacks for testing accepted at ECCV 2020 as an oral paper</li>
+                        <li> <b>Jul '20:</b> New paper on semantic adversarial attacks for testing accepted at ECCV 2020 as an oral</li>
                         <li> <b>March '20:</b> <a href="https://rakshithshetty.github.io/CausalVQA/"> Towards Causal VQA </a> accepted at CVPR 2020 and datasets released</li>
                         <li> <b>June '19: </b> <a href="https://datasets.d2.mpi-inf.mpg.de/rakshith/notusingcar/poster.pdf">Not using car</a> poster presented at CVPR 2020</li>
                         <li> <b>Dec '18: </b> Presenting object removal work at Qualcomm headquarters at San Diego </li>
