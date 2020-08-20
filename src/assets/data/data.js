@@ -52,11 +52,16 @@ export const projectData = [
                     'Bernt Schiele'
         ],
 		where:['ECCV, 2020, ', <b> <span style={{color: 'red'}}> Oral </span></b>],
+		tldr: 'Semantic adversarial attack using a disentangled generator to find targeted hard samples to fool an object detector',
 		links: [
 			{
 				title: 'Paper',
-				link: paper3570,
+				link: 'https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123470477.pdf',
 			},
+            {
+                title: 'Video',
+                link: 'https://youtu.be/1TiXRTJJikE',
+            },
 			{
 				title: 'Bibtex',
 				isExpandable: true,
@@ -79,6 +84,7 @@ export const projectData = [
                     <strong> Rakshith Shetty, </strong>,
                     'Mario Fritz'],
 		where:'CVPR, 2020',
+		tldr: 'Quantifying spurious context dependence in VQA models through image editing',
 		links: [
 			{
 				title: 'Paper',
@@ -111,6 +117,7 @@ export const projectData = [
                     'Mario Fritz'],
 		where:
 			'CVPR, 2019',
+		tldr: 'Measuring and mitigating over-reliance on context in classification and segmentation models',
 		links: [
 			{
 				title: 'Paper',
@@ -145,6 +152,7 @@ export const projectData = [
                     ],
 		where:
 			'NeurIPS, 2018',
+		tldr: 'Learning an object removal GAN using weak supervision from unpaired data',
 		links: [
 			{
 				title: 'Paper',
@@ -182,6 +190,7 @@ export const projectData = [
                     ', Bernt Schiele, ',
                     'Mario Fritz'],
 		where:['USENIX, 2018, ', <b> <span style={{color: 'red'}}> Oral </span></b>],
+		tldr: 'Learning to transfer writing style with adversarial training inorder to obfuscate private attributes ',
 		links: [
 			{
 				title: 'Paper',
@@ -223,6 +232,7 @@ export const projectData = [
                     ],
 		where:
 			'ICCV, 2017',
+		tldr: 'GAN based image captioning model to produce more diverse captions',
 		links: [
 			{
 				title: 'Paper',
@@ -261,6 +271,7 @@ export const projectData = [
                     ],
 		where:
 			'ICCV, 2017',
+		tldr: 'Quantifying aggreement between object referrals in caption and visual saliency',
 		links: [
 			{
 				title: 'Paper',

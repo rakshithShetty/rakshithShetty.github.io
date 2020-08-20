@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
-const ProjectCard = ({ title, desc, where, img, links }) => {
+const ProjectCard = ({ title, desc, where, tldr, img, links }) => {
 	const [showDetails, setShowDetails] = useState(false);
 	const [details, setDetails] = useState(null);
 
@@ -15,6 +15,7 @@ const ProjectCard = ({ title, desc, where, img, links }) => {
 				<h4>{title}</h4>
 				<p>{desc}</p>
 				<p><i>{where}</i></p>
+				<p><b>Tldr:</b> {tldr}</p>
 				{links.map((l, i) =>
 					l.isExpandable ? (
 						<a

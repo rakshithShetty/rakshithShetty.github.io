@@ -35,12 +35,13 @@ class HomeIndex extends React.Component {
 					</section>
 					<section id="three">
 						<h2>Publications</h2>
-						{projectData.map(({ title, shortDesc, where, mainThumb, links }, index) => (
+						{projectData.map(({ title, shortDesc, where, tldr, mainThumb, links }, index) => (
 							<ProjectCard
 								key={index}
 								title={title}
 								desc={shortDesc}
                                 where={where}
+								tldr={tldr}
 								img={mainThumb}
 								links={links}
 							/>
