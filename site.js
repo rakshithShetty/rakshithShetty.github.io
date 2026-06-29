@@ -93,8 +93,7 @@
       '<p class="card-authors">' + pub.authors + "</p>" +
       '<p class="card-venue">' + escapeHtml(pub.venue) + "</p>" +
       '<p class="card-tldr">' + pub.tldr + "</p>" +
-      '<div class="card-links">' + pillsHtml(pub.links) + "</div>" +
-      bibtex +
+      '<div class="card-links">' + pillsHtml(pub.links) + bibtex + "</div>" +
       "</div></article>"
     );
   }

@@ -186,10 +186,16 @@ section { margin: 0 0 4em; }
   vertical-align: middle;
 }
 
-/* link pills */
+/* link pills + bibtex share one wrapping row */
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin-top: 0.25em;
+}
 .pill {
   display: inline-block;
-  margin: 0.25em 0.5em 0 0;
   padding: 0.25em 0.85em;
   font-size: 0.9em;
   color: #14322a;
@@ -199,16 +205,15 @@ section { margin: 0 0 4em; }
 }
 .pill:hover { color: #14322a; background: var(--pill-bg-hover); }
 
-/* bibtex expander */
+/* bibtex expander — sits inline with the pills, expands full-width when open */
 .bibtex {
-  margin-top: 0.5em;
   font-size: 0.9em;
 }
+.bibtex[open] { flex-basis: 100%; }
 .bibtex > summary {
   display: inline-block;
   cursor: pointer;
   list-style: none;
-  margin-top: 0.25em;
   padding: 0.25em 0.85em;
   color: var(--primary);
   background: #f3f4fa;
@@ -218,7 +223,7 @@ section { margin: 0 0 4em; }
 .bibtex > summary::-webkit-details-marker { display: none; }
 .bibtex > summary:hover { color: var(--accent); }
 .bibtex pre {
-  margin: 0.75em 0 0;
+  margin: 0.6em 0 0;
   padding: 1em;
   overflow-x: auto;
   font-family: Consolas, Menlo, Courier, monospace;
